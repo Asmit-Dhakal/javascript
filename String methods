@@ -1,0 +1,14 @@
+let name ="Asmit";
+let sentence= `my name is ${name}`;2
+console.log(name.length);
+console.log(sentence);
+console.log(name.toUpperCase());
+console.log(name.slice(2,4));
+console.log(name.slice(4));
+console.log(name.slice(1));
+
+
+
+
+
+
