@@ -1,14 +1,11 @@
 let name ="Asmit";
-let sentence= `my name is ${name}`;2
+let sentence= `my name is ${name}`;
 console.log(name.length);
 console.log(sentence);
 console.log(name.toUpperCase());
+console.l
 console.log(name.slice(2,4));
 console.log(name.slice(4));
-console.log(name.slice(1));
-
-
-
-
-
-
+let name1= "bunutu meow"
+console.log(name1.replace("meow","I love you") );
+console.log(name.concat(" is a husband of ",name1));
