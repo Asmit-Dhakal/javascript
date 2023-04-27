@@ -7,6 +7,10 @@ while (runAgain) {
   let age = prompt("Enter age");
   age = Number.parseInt(age);
 
+  if (age < 0) {
+    console.error("Please enter valid age ");
+    break;
+  }
   if (canDrive(age)) {
     alert("you can  drive");
   }
