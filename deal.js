@@ -19,3 +19,13 @@ while (runAgain) {
   }
   runAgain = confirm("Do you want to run again ?");
 }
+let number = prompt("Enter the number");
+number = Number.parseInt(number);
+if (number < 5) {
+  location.href = "https://google.com";
+}
+ ;
+
+let color = prompt("Enter the color");
+document.body.style.background = color;
+
