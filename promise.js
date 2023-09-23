@@ -1,11 +1,26 @@
-let complete =true;
-let prom=new promise(function(resolve,reject){
-    if(complete)
-    {
-resolve("sucessful");
-    }
-    else{
-reject("I am failed");
-    }
+ function prom(complete) {
+return new Promise(function(resolve,reject){
+    console.log("Fetching data,please wait.")
+    setTimeout(()=>{
+        if(complete)
+
+        {
+    resolve("sucessful");
+        }
+        else
+        {
+    reject("I am failed.");
+        }
+    }, 1000)
 });
-console.log(prom);
+
+ }
+ let onfulfilment=(result)=>{
+    console.log(result);
+
+ }
+ let onRejection=(error)=>{
+    console.log(error);
+ }
+ prom(true).then(onfulfilment);
+ prom(true).catch(onRejection);
